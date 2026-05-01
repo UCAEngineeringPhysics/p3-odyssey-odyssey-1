@@ -5,7 +5,7 @@
 **Maintainer:** odyssey <odyssey@uca.edu> · **License:** Apache-2.0 · **ROS 2:** Jazzy
 **Map:** [`lsc_odyssey_1.pgm`](lsc_odyssey_1.pgm) / [`lsc_odyssey_1.yaml`](lsc_odyssey_1.yaml)
 
-A HomeR rover that drives itself from LSC 159 to the PAE department front desk in LSC 171, carrying a 12 oz coffee on top.
+A HomeR-based rover that drives itself from LSC 159 to the front desk in LSC 171, carrying a 12-oz coffee on a trailer at the back. In our design, the trailer has hazard lights using a simple 555 timer IC circuit. We also added a circuit on the front that plays the Galaga theme with headlights on during navigation!
 
 ---
 
@@ -35,7 +35,7 @@ Two machines, same Wi-Fi, same `ROS_DOMAIN_ID`:
 - **Raspberry Pi** (on the rover) — motors, LiDAR, IMU, TF.
 - **Laptop** — SLAM, Nav2, RViz.
 
-### Raspberry Pi (fresh ROS 2 Jazzy)
+### Raspberry Pi (ROS 2 Jazzy)
 
 ```bash
 sudo apt install -y ros-jazzy-rplidar-ros ros-jazzy-robot-localization \
@@ -50,7 +50,7 @@ source install/setup.bash
 
 Flash the Pico firmware once via Thonny (upload the contents of `src/odyssey_controller/picoscripts/` to the device).
 
-### Laptop (fresh ROS 2 Jazzy)
+### Laptop (ROS 2 Jazzy)
 
 ```bash
 sudo apt install -y ros-jazzy-slam-toolbox ros-jazzy-navigation2 \
@@ -70,21 +70,24 @@ source install/setup.bash
 
 **Pi:**
 ```bash
+cd robotics2_ws && source install/setup.bash
 ros2 launch odyssey_controller bringup.launch.py
 ```
 
 **Laptop:**
 ```bash
+cd homer_ws && source install/setup.bash
 ros2 launch homer_navigation create_map.launch.py
 ```
 
-Drive the rover with the keyboard until the LSC 159 → 171 hallway is fully scanned in RViz.
+Rviz will open up upon launch. Use this to see what the robot maps and debug in the case of any discrepancies. Drive with the keyboard/controller until the LSC 159 → 171 hallway is fully scanned in RViz. Take your time with this because if the wifi signal is weak between the Pi and the laptop, the map can begin to read inaccurately.
 
 ### Save the map
 
 From the laptop, in `~/homer_ws/src/homer_navigation/maps/`:
 
 ```bash
+cd robotics2_ws && source install/setup.bash
 ros2 run nav2_map_server map_saver_cli -f lsc_odyssey_1
 ```
 
@@ -94,11 +97,13 @@ This writes `lsc_odyssey_1.pgm` and `lsc_odyssey_1.yaml`. The navigate launch pi
 
 **Pi:**
 ```bash
+cd robotics2_ws && source install/setup.bash
 ros2 launch odyssey_controller bringup.launch.py
 ```
 
 **Laptop:**
 ```bash
+cd homer_ws && source install/setup.bash
 ros2 launch homer_navigation navigate.launch.py
 ```
 
