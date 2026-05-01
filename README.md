@@ -13,18 +13,19 @@ A HomeR rover that drives itself from LSC 159 to the PAE department front desk i
 
 ### Mechanical Design
 
-> ![New Base](NewBase)
+> ![New Base](NewBase.pdf)
 
-> ![Trailer](Trailer)
+> ![Trailer](Trailer.pdf)
 
-> ![Bearing Parts](BearingParts)
- 
+> ![Bearing Parts](BearingParts.pdf)
 
+>![Odyssey Build](OdysseyBuild.jpg) 
 ### Installation
 
-> Utilizing the lables on the technical drawings above,slot the 12mm bearings into the appropriate places on the New base and Trailer, secue them with set screws
+> Utilizing the lables on the technical drawings and the image provided, slot the 12mm bearings into the appropriate places on the New base and Trailer, secue them with set screws
 
-> Then using the same size bearings slot them into the bearing brakets and thread a long screw threw the bearing to use as a stud to attach the same kind of wheels used on the front of the bot.
+> Then using the same size bearings slot them into the bearing brackets and thread a long screw though the bearing to use as a stud to attach the same kind of wheels used on the front of the bot.
+> Now mount the bracket to the trailer with the flat side (the side where the bearing was inserted) against the trailer and affix using 2.5mm screws
 ---
 
 ## 2. Software Setup
