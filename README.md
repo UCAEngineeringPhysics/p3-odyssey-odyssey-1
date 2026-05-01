@@ -15,36 +15,17 @@ This package drives a HomeR rover autonomously from Dr. Chen's lab (LSC 159) to 
 
 ### Mechanical Design
 
-The cup carrier is a flat platform mounted to the top deck of the HomeR chassis, centered over the drive axle to keep the payload above the rover's pivot point and minimize tip-over moment during turns.
+
 
 **Key components**
-- **Base plate** — laser-cut acrylic disc bolted to the four M3 standoffs on the top deck of the HomeR chassis.
-- **Cup retainer** — a circular ring sized to the bottom of a standard 12 oz coffee cup, holding it against lateral motion without compressing the sleeve.
-- **Anti-slip pad** — silicone disc inside the retainer to prevent the cup from sliding vertically or rotating during acceleration / braking.
-- **Center of mass** — the cup's CoM sits directly over the wheel axle to minimize the pitching moment when the controller commands acceleration changes.
 
 **Critical dimensions** (matched to the standard 12 oz cup):
 
-| Dimension | Value |
-|-----------|-------|
-| Cup top diameter | 90 mm |
-| Cup bottom diameter | 60 mm |
-| Cup height | 110 mm |
-| Retainer inner diameter | 62 mm (loose slip fit on the cup base) |
-| Base plate diameter | 140 mm |
-| Mount hole pattern | 4× M3 on a 60 mm bolt circle (matches HomeR top deck) |
 
 > **TODO:** drop your sketch / techdraw here. Recommended path: `drawings/cup_carrier.png` (or `.pdf`). Reference it as
 > `![Cup Carrier](drawings/cup_carrier.png)`
 
 ### Hardware Installation Guide
-
-1. **Power down the rover** and remove the existing top deck plate (4× M3 screws).
-2. **Place the cup carrier** over the four M3 standoffs on the HomeR top deck. Confirm orientation: the retainer ring is centered on the chassis, with no overhang past the bumpers.
-3. **Bolt down** with four M3×8 mm screws and lock washers. Torque finger-tight, then a quarter-turn with a 2.5 mm hex key.
-4. **Insert the silicone anti-slip pad** into the bottom of the retainer ring.
-5. **Verify clearance**: the LiDAR's 360° scan plane must remain unobstructed by the cup. Looking from above, the cup must not protrude past the edge of the LiDAR housing.
-6. **Load the cup** with the lid sealed and place it inside the retainer ring just before launch.
 
 > **TODO:** add a 2–4 photo install sequence (or annotated diagram) here for the bonus 5%. Save photos to `drawings/install_step_1.jpg` … `install_step_4.jpg`.
 
