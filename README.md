@@ -9,7 +9,7 @@ A HomeR-based rover that drives itself from LSC 159 to the front desk in LSC 171
 
 >![galaga_circuit](galaga_circuit.jpg)
 
->![galaga_schematic](galaga_schematic.jpg)
+>![galaga_schematic](galaga_schematic.png)
 
 ---
 
