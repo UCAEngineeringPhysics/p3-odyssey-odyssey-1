@@ -13,12 +13,18 @@ A HomeR rover that drives itself from LSC 159 to the PAE department front desk i
 
 ### Mechanical Design
 
-> **TODO (teammate):** description of the custom cup mount goes here — key components, critical dimensions, and a sketch at `drawings/cup_carrier.png`.
+> ![New Base](NewBase)
+
+> ![Trailer](Trailer)
+
+> ![Bearing Parts](BearingParts)
+ 
 
 ### Installation
 
-> **TODO (teammate):** 2–4 step install sequence with photos at `drawings/install_step_*.jpg`.
+> Utilizing the lables on the technical drawings above,slot the 12mm bearings into the appropriate places on the New base and Trailer, secue them with set screws
 
+> Then using the same size bearings slot them into the bearing brakets and thread a long screw threw the bearing to use as a stud to attach the same kind of wheels used on the front of the bot.
 ---
 
 ## 2. Software Setup
