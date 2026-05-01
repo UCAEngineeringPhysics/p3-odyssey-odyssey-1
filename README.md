@@ -7,11 +7,9 @@
 
 A HomeR-based rover that drives itself from LSC 159 to the front desk in LSC 171, carrying a 12-oz coffee on a trailer at the back. In our design, the trailer has hazard lights using a simple 555 timer IC circuit. We also added a circuit on the front that plays the Galaga theme with headlights on during navigation!
 
->![Hazards_schematic](hazards_schamatic.png)
-
 >![galaga_circuit](galaga_circuit.jpg)
 
->![galaga_schematic](galaga_schematic.jpg)
+>![galaga_schematic](galaga_schematic)
 
 ---
 
