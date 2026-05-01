@@ -17,7 +17,7 @@ A HomeR rover that drives itself from LSC 159 to the PAE department front desk i
 
 >![Trailer](Trailer-1.png)
 
->![Bearing Parts](BearingParts-1.png)
+>![Bearing Parts](BearingsParts-1.png)
 
 >![Odyssey Build](OdysseyBuild.jpg) 
 ### Installation
